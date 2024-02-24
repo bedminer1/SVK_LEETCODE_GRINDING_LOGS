@@ -40,6 +40,7 @@
             <section class="p-4">
                 <CodeBlock language={"Javascript"} code={snippet.code}/>
             </section>
+            <a href={snippet.link} target="_blank">link to question</a>
         </div>
         {/each}
 
