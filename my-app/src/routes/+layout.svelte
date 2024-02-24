@@ -1,6 +1,10 @@
 <script lang="ts">
 	import '../app.postcss';
-	import { AppShell, AppBar } from '@skeletonlabs/skeleton';
+	import { AppShell, AppBar, storeHighlightJs } from '@skeletonlabs/skeleton';
+	import hljs from 'highlight.js'
+	import 'highlight.js/styles/github-dark.css'
+
+	storeHighlightJs.set(hljs)
 
 </script>
 
