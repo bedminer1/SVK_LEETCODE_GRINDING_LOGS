@@ -12,6 +12,7 @@ interface CodeSnippetInput {
 	question: string
 	link: string
 	code: string
+	favorite: boolean
 }
 
 interface CodeSnippet {

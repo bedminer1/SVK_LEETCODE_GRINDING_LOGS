@@ -19,6 +19,11 @@
 					<a href="/topics">topics</a>
 				</div>			
 			</svelte:fragment>
+			<svelte:fragment slot="trail">
+				<div>
+					<a href="https://github.com/bedminer1" target="_blank">github @bedminer1</a>
+				</div>
+			</svelte:fragment>
 		</AppBar>
 	</svelte:fragment>
 	<!-- Page Route Content -->

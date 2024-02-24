@@ -7,12 +7,12 @@ export const actions = {
     await pb.admins.authWithPassword(SECRET_EMAIL, SECRET_PASSWORD);
 
     const form = await request.formData();
-    const question = form.get("question") ?? "";
-    const link = form.get("link") ?? "";
-    const code = form.get("code") ?? "";
-    const favorite = false;
+    const question = form.get("question") as string ?? "";
+    const link = form.get("link") as string ?? "";
+    const code = form.get("code") as string ?? "";
+    const favorite = false as boolean;
 
-    const newRecord = {
+    const newRecord : CodeSnippetInput = {
       question,
       link,
       code,
@@ -40,7 +40,7 @@ export const load = async ({ fetch }) => {
     sort: "-created",
   });
 
-  const results = records.map((record) => {
+  const results : CodeSnippet[] = records.map((record) => {
     return {
       question: record.question,
       link: record.link,
