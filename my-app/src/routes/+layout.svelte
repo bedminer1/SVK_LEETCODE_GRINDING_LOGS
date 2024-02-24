@@ -10,25 +10,10 @@
 		<!-- App Bar -->
 		<AppBar>
 			<svelte:fragment slot="lead">
-				<strong class="text-xl uppercase">LEETCODE LOGS</strong>
-			</svelte:fragment>
-			<svelte:fragment slot="trail">
-				<a
-					class="btn btn-sm variant-ghost-surface"
-					href="https://twitter.com/SkeletonUI"
-					target="_blank"
-					rel="noreferrer"
-				>
-					X
-				</a>
-				<a
-					class="btn btn-sm variant-ghost-surface"
-					href="https://github.com/skeletonlabs/skeleton"
-					target="_blank"
-					rel="noreferrer"
-				>
-					GitHub
-				</a>
+				<div class="flex gap-4 text-xl">
+					<a href="/">home</a>
+					<a href="/topics">topics</a>
+				</div>			
 			</svelte:fragment>
 		</AppBar>
 	</svelte:fragment>
