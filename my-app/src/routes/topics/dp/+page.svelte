@@ -27,7 +27,7 @@
             <h2>My Solutions</h2>
         </div>
         {#each data?.records as snippet}
-        <div class="card">
+        <div class="card p-2">
             <header class="card-header">
                 {snippet.question}
                 <div class="float-right">
@@ -40,7 +40,7 @@
             <section class="p-4">
                 <CodeBlock language={"Javascript"} code={snippet.code}/>
             </section>
-            <a href={snippet.link} target="_blank">link to question</a>
+            <a href={snippet.link} target="_blank" class="m-5">link to question</a>
         </div>
         {/each}
 
