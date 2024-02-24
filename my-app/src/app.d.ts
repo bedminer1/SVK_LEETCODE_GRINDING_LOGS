@@ -19,4 +19,5 @@ interface CodeSnippet {
 	link: string
 	code: string
 	favorite: boolean
+	id: string
 }
