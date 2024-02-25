@@ -1,4 +1,5 @@
 <script lang="ts">
+    import { enhance } from "$app/forms";
     import { CodeBlock } from "@skeletonlabs/skeleton";
     
     export let snippet : CodeSnippet
@@ -8,7 +9,7 @@
     <header class="card-header">
         {snippet.question}
         <div class="float-right">
-            <form action="?/delete" method="post">
+            <form action="?/delete" method="post" use:enhance>
                 <input type="hidden" class="id" name="id" value={snippet.id}>
                 <button type="submit" class="btn btn-sm variant-filled-error">Delete</button>
             </form>

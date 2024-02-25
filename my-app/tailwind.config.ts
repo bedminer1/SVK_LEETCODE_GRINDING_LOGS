@@ -1,3 +1,5 @@
+declare var require: any
+
 import { join } from "path";
 import type { Config } from "tailwindcss";
 import forms from "@tailwindcss/forms";
