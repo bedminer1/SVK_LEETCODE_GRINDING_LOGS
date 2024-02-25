@@ -15,8 +15,8 @@
 		<AppBar>
 			<svelte:fragment slot="lead">
 				<div class="flex gap-4 text-xl pl-5">
-					<a href="/">home</a>
-					<a href="/topics">topics</a>
+					<a href="/" class="hover:text-warning-500">home</a>
+					<a href="/topics" class="hover:text-warning-500">topics</a>
 				</div>			
 			</svelte:fragment>
 			<svelte:fragment slot="trail">
