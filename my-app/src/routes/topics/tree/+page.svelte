@@ -11,15 +11,13 @@
         <h3 class="text-center py-6 text-3xl">Just solved a question?</h3>
         <CodeInput />
         <div class="text-center py-6">
-            <h2 class="text-2xl pt-9">Dynamic Programming</h2>
+            <h2 class="text-2xl pt-9">Tree</h2>
         </div>
         {#each data?.records as snippet}
-        {#if snippet.topic == 'dynamic programming'}
+        {#if snippet.topic == 'tree'}
         <CodeDisplayCard {snippet} />   
         {/if}
         {/each}
 
     </div>
 </div>
-
-

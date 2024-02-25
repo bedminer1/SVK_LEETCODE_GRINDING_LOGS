@@ -2,5 +2,10 @@
 	<div class="space-y-5 text-center flex flex-col items-center">
 		<h2 class="text-6xl">Topics</h2>
 		<a href="/topics/dp">dynamic programming</a>
+		<hr>
+		<a href="/topics/linked-list">linked-list</a>
+		<hr>
+		<a href="/topics/tree">tree</a>
+		<hr>
 	</div>
 </div>
