@@ -14,9 +14,9 @@
             <h2 class="text-2xl pt-9">Dynamic Programming</h2>
         </div>
         {#each data?.records as snippet}
-        {#if snippet.topic == 'dynamic programming'}
-        <CodeDisplayCard {snippet} />   
-        {/if}
+            {#if snippet.topic == 'dynamic programming'}
+            <CodeDisplayCard {snippet} />   
+            {/if}
         {/each}
 
     </div>
