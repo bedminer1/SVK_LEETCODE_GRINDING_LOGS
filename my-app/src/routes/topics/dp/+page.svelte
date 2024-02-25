@@ -1,5 +1,6 @@
 <script lang="ts">
     import { CodeBlock } from '@skeletonlabs/skeleton'
+    import CodeDisplay from '$lib/components/CodeDisplay.svelte';
 
     export let data
 </script>
@@ -27,21 +28,7 @@
             <h2 class="text-2xl pt-9">Your Solutions</h2>
         </div>
         {#each data?.records as snippet}
-        <div class="card p-2">
-            <header class="card-header">
-                {snippet.question}
-                <div class="float-right">
-                    <form action="?/delete" method="post">
-                        <input type="hidden" class="id" name="id" value={snippet.id}>
-                        <button type="submit" class="btn btn-sm variant-filled-error">Delete</button>
-                    </form>
-                </div>
-            </header>
-            <section class="p-4">
-                <CodeBlock language={"Javascript"} code={snippet.code}/>
-            </section>
-            <a href={snippet.link} target="_blank" class="m-5">link to question</a>
-        </div>
+        <CodeDisplay {snippet} />   
         {/each}
 
     </div>
