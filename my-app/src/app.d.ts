@@ -12,13 +12,13 @@ interface CodeSnippetInput {
 	question: string
 	link: string
 	code: string
-	favorite: boolean
+	topic: string
 }
 
 interface CodeSnippet {
 	question: string
 	link: string
 	code: string
-	favorite: boolean
+	topic: string
 	id: string
 }

@@ -10,13 +10,13 @@ export const actions = {
     const question = form.get("question") as string ?? "";
     const link = form.get("link") as string ?? "";
     const code = form.get("code") as string ?? "";
-    const favorite = false as boolean;
+    const topic = form.get("topic") as string ?? ""
 
     const newRecord : CodeSnippetInput = {
       question,
       link,
       code,
-      favorite,
+      topic,
     };
 
     const record = await pb.collection("snippets").create(newRecord);
@@ -45,7 +45,7 @@ export const load = async ({ fetch }) => {
       question: record.question,
       link: record.link,
       code: record.code,
-      favorite: record.favorite,
+      topic: record.topic,
       id: record.id,
     };
   });
