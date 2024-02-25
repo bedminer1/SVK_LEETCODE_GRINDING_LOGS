@@ -21,7 +21,7 @@
 			</svelte:fragment>
 			<svelte:fragment slot="trail">
 				<div>
-					<a href="https://github.com/bedminer1" target="_blank">github @bedminer1</a>
+					<a href="https://github.com/bedminer1" target="_blank" class="hover:text-warning-500">github @bedminer1</a>
 				</div>
 			</svelte:fragment>
 		</AppBar>
