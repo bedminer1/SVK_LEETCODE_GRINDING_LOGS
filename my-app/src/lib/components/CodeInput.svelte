@@ -11,8 +11,8 @@
     <label class="label w-full">
         <span>Topic</span>
         <select class="select" name="topic" id="topic"> 
-            <option value="dynamic programming">dynamic programming</option>
-            <option value="tree">tree</option>
+            <option value="dynamic-programming">dynamic-programming</option>
+            <option value="binary-trees">binary-trees</option>
             <option value="linked-list">linked-list</option>
         </select>
     </label>

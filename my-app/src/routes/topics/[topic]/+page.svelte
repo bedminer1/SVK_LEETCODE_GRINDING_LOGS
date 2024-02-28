@@ -2,8 +2,11 @@
     import CodeDisplayCard from '$lib/components/CodeDisplayCard.svelte';
     import CodeInput from '$lib/components/CodeInput.svelte';
     import { fetchData } from '$lib/store.js';
+    import { page } from '$app/stores'
 
-    // export let data
+    let topic = $page.params.topic
+    console.log(topic)
+
     let records: CodeSnippet[] = []
     $: {
     records = $fetchData || []
@@ -16,12 +19,12 @@
         <h3 class="text-center py-6 text-3xl">Just solved a question?</h3>
         <CodeInput />
         <div class="text-center py-6">
-            <h2 class="text-2xl pt-9">Tree</h2>
+            <h2 class="text-2xl pt-9">{topic}</h2>
         </div>
         {#each records as snippet}
-        {#if snippet.topic == 'tree'}
-        <CodeDisplayCard {snippet} />   
-        {/if}
+            {#if snippet.topic == topic}
+            <CodeDisplayCard {snippet} />   
+            {/if}
         {/each}
 
     </div>
