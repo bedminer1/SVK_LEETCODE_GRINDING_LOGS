@@ -1,8 +1,13 @@
 <script lang="ts">
     import CodeDisplayCard from '$lib/components/CodeDisplayCard.svelte';
     import CodeInput from '$lib/components/CodeInput.svelte';
+    import { fetchData } from '$lib/store.js';
 
-    export let data
+    // export let data
+    let records: CodeSnippet[] = []
+    $: {
+    records = $fetchData || []
+  }
 </script>
 
 
@@ -13,7 +18,7 @@
         <div class="text-center py-6">
             <h2 class="text-2xl pt-9">Dynamic Programming</h2>
         </div>
-        {#each data?.records as snippet}
+        {#each records as snippet}
             {#if snippet.topic == 'dynamic programming'}
             <CodeDisplayCard {snippet} />   
             {/if}

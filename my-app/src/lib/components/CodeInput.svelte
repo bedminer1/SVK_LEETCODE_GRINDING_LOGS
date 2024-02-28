@@ -3,7 +3,7 @@
 </script>
 
 
-<form class="card p-6 w-full text-token space-y-4 flex gap-3 flex-col items-center" method="post" action="?/create" use:enhance>
+<form class="card p-6 w-full text-token space-y-4 flex gap-3 flex-col items-center" method="post" action="?/create">
     <label class="label w-full">
         <span>Question</span>
         <input type="text" class="input" name="question" id="question" placeholder="Enter Question">

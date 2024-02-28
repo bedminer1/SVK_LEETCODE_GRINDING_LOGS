@@ -9,7 +9,7 @@
     <header class="card-header">
         {snippet.question}
         <div class="float-right">
-            <form action="?/delete" method="post" use:enhance>
+            <form action="?/delete" method="post">
                 <input type="hidden" class="id" name="id" value={snippet.id}>
                 <button type="submit" class="btn btn-sm variant-filled-error">Delete</button>
             </form>
